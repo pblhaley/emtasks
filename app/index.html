@@ -17,6 +17,20 @@
   <body>
     {{content-for "body"}}
 
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBFuThLvNLUxcu5i_OW7koyfMTLkFY1Z5I",
+    authDomain: "emtasks-a0441.firebaseapp.com",
+    databaseURL: "https://emtasks-a0441.firebaseio.com",
+    projectId: "emtasks-a0441",
+    storageBucket: "emtasks-a0441.appspot.com",
+    messagingSenderId: "716901029582"
+  };
+  firebase.initializeApp(config);
+</script>
+
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/emtasks.js"></script>
 
